@@ -1,3 +1,3 @@
 # Lab 2 - Starter
 
-https://incogowl.github.io/Lab2_Starter/
+https://incogowl.github.io/sp24-cse110-lab3/
