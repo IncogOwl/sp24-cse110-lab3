@@ -2,29 +2,22 @@
 
 /* Define a CSS variable with a fallback */
 :root {
-    --primary-color: #007bff; /* CSS variable with fallback */
-}
-
-
-.box2{
-    font-size: 12px; 
-    width: 200px;
-    color: #007bff;
-    background-color:#64F ;
-    display: block;
-    font-family: "Jersey 25", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    --primary-color: #007bff; 
 }
 
 @media all {
-    * {
+    & * {
         margin: 0;
         padding: 0;
         font-size: 1.3em;
     }
 }
+@media only screen and (max-width: 600px) {
+}
 
+#heading{
+  background-color: black;
+}
 h1 {
     color: hsl(50 80% 40%); 
     background-color:hsla(120deg, 75%, 25%, 0.8); 
@@ -57,9 +50,9 @@ a:active {
     font-size: 50px; 
     color: rgb(254, 68, 69);
     background-color:  rgba(6,69,144, 5%);
-    margin-top: 10px;     /* Margin for the top side */
-    margin-right: 20px;   /* Margin for the right side */
-    margin-bottom: 15px;  /* Margin for the bottom side */
+    margin-top: 10px;     
+    margin-right: 20px;  
+    margin-bottom: 15px;  
     margin-left: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -75,6 +68,17 @@ a:active {
     font-style: normal;
 }
 
+.box2{
+  font-size: 12px; 
+  width: 200px;
+  color: #007bff;
+  background-color:#64F ;
+  display: block;
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .box2 > p{
     margin: 1px 1px 1px 1px;
     padding: 1px 1px 1px 1px;
@@ -87,6 +91,7 @@ a:active {
     max-width: fit-content;
     min-width: 0px;
 }
+
 
 .box3{
     margin: auto;
