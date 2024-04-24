@@ -1,0 +1,133 @@
+/*This is the beginning of my CSS file*/
+
+/* Define a CSS variable with a fallback */
+:root {
+    --primary-color: #007bff; /* CSS variable with fallback */
+}
+
+
+.box2{
+    font-size: 12px; 
+    width: 200px;
+    color: #007bff;
+    background-color:#64F ;
+    display: block;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media all {
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 1.3em;
+    }
+}
+
+h1 {
+    color: hsl(50 80% 40%); 
+    background-color:hsla(120deg, 75%, 25%, 0.8); 
+    font-size: 2rem;
+}
+
+h2{
+    color: bisque;
+    background-color: color(display-p3 1 0 0.331);
+}
+
+h3{
+    color:color-mix(in lch, plum, pink);
+    background-color: var(--primary-color, blue);
+}
+
+a[href="<//weather.com/weather/tenday/l/San+Diego+CA?canonicalCityId=cb5c473781cc06501376639dce8f0823a99187dcb42c79471a4303c076d66452" ]{
+
+    text-decoration: solid;
+    text-align: left;
+} 
+
+a:hover {
+    color:hotpink;
+  }
+a:active {
+    color: red; /* Change text color to red when the link is active */
+}
+.box1 a{
+    font-size: 50px; 
+    color: rgb(254, 68, 69);
+    background-color:  rgba(6,69,144, 5%);
+    margin-top: 10px;     /* Margin for the top side */
+    margin-right: 20px;   /* Margin for the right side */
+    margin-bottom: 15px;  /* Margin for the bottom side */
+    margin-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: auto;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.box2 > p{
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 0.2cm;
+    border-radius: 10%;
+    display: inline;
+    height: 5px;
+    max-width: fit-content;
+    min-width: 0px;
+}
+
+.box3{
+    margin: auto;
+    display: grid;
+    grid-row: inherit;
+    grid-area: auto;
+    grid-template-columns: auto;
+    position: relative;
+}
+  
+  p,div{
+    color: black;
+  }
+
+  img+p{
+    font-weight: bold;
+  }
+
+  p~a{
+    font-size: small;
+  }
+
+  a.box1{
+    font-weight: bold;
+  }
+
+  h1:has(+ p) {
+    margin-bottom: 0;
+  }
+
+  .box1 {
+    font-family: system-ui;
+    font-size: 1.2rem;
+  }
+  
+  .box1 > a {
+    color: tomato;
+  }
+  
+  .box1 > a:hover,
+  .box1 > a:focus {
+    color: ivory;
+    background-color: tomato;
+  }
